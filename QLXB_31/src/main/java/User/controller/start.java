@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class start {
 	@RequestMapping("index")
 	public String welcome() {
-		return "start";
+		return "login";
 
-	}}
+}}
