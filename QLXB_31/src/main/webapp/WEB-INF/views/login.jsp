@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 <link href='assets/css/login.css' rel='stylesheet'>
 <style>
 .managerBtn {
-	
+	cursor: pointer;
 	text-align: center;
 	width: 50%;
 	background-color: #616161;
@@ -16,48 +17,40 @@
 	display: inline-block;
 	padding-right: 20px;
 	margin-right: 20px;
-	
 }
 
 .guestBtn {
-	
+	cursor: pointer;
 	width: 50%;
 	text-align: center;
 	background-color: #505050;
 	border-radius: 10px 10px 0px 0px;
-	display : inline-block;
+	display: inline-block;
 	padding-right: 20px;
 	right: 0px;
 	display: inline-block;
 }
 
 .loginManager {
-
 	display: block;
 	background-color: #616161;
-	border-radius:0px 0px 10px 10px ;
+	border-radius: 0px 0px 10px 10px;
 	padding: 0px 30px 30px 30px;
-	
 }
 
 .loginGuest {
-
 	display: none;
 	background-color: #616161;
-	border-radius:  0px 0px 10px 10px ;
-	 padding: 0px 30px 30px 30px;
-	 }
+	border-radius: 0px 0px 10px 10px;
+	padding: 0px 30px 30px 30px;
+}
 
 .container {
-
 	display: flex;
 	justify-content: space-between;
 	text-decoration: none;
-	box-sizing:inherit;
-	
+	box-sizing: inherit;
 }
-
-
 </style>
 </head>
 <body>
@@ -73,8 +66,8 @@
 			</div>
 		</div>
 		<div class="loginManager">
-			<form action="#">
-				<input type="text" class="text" name="username"> <span>username</span>
+			<form action="login" method="post" >
+				<input type="text" class="text" name="userename"> <span>username</span>
 				<br> <br> <input type="password" class="text"
 					name="password"> <span>password</span> <br> <input
 					type="checkbox" id="checkbox-1-1" class="custom-checkbox" /> <label

@@ -5,10 +5,13 @@ import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@Repository
 
-public class start {
+
+public class TrangchuController {
 	
-	
+	@RequestMapping("index")
+	public String welcome() {
+		return "trangchu/trangchu";
+	}
 
 }

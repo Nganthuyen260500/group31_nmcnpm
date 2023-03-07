@@ -1,0 +1,56 @@
+
+header{
+    background-color:cadetblue;
+    position: relative;
+}
+.thanh-dau {
+    color: brown;
+}
+.nav-link {
+    color: aliceblue;
+    font-size: 20px;
+    padding-left: 150px;
+    justify-content: space-between;
+}
+
+.dong-2 {
+    color:darkgray;
+    font-size: 15px;
+    background-color:beige;
+}
+
+.thanh-2 {
+    background-color: beige;
+}
+
+.dong-3 {
+    padding-top: 50px;
+}
+
+.anh-xebus {
+    width: 140%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+.ngan-cach {
+    background-color: cadetblue;
+    
+}
+
+.tieu-de {
+    padding-top: 50px;
+    font-size: large;
+}
+
+.duoi {
+    background-color: cadetblue;
+    height: 50px;
+    
+}
+
+.dong-cuoi {
+    color: aliceblue;
+}
