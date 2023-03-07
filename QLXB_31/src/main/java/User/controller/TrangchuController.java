@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 
-
 public class TrangchuController {
 	
 	@RequestMapping("index")
 	public String welcome() {
-		return "trangchu/trangchu";
+		return "admin/admin";
 	}
 
 }
