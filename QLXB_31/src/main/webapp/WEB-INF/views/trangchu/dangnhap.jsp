@@ -6,8 +6,188 @@
 <meta charset="UTF-8">
 <title>Trang chủ</title>
 <link href='assets/css/trangchu.css' rel='stylesheet'>
+ <!-- <link href='assets/css/login.css' rel='stylesheet'>  -->
 
 <style>
+
+.loginManager {
+	display:block;
+}
+.loginGuest {
+	display:none;
+}
+
+.login {
+  position: relative;
+  height: 560px;
+  width: 530px;
+  margin: auto;
+  padding: 60px 60px;
+      margin-top: 40px;
+    margin-bottom: 40px;
+  background: url(https://picsum.photos/id/1004/5616/3744) no-repeat   center center #5F9EA0;   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+}
+
+form {
+  padding-top:80px;
+  
+}
+h2 {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+  
+}
+h2:first-child {
+  padding-left: 0px;
+}
+
+span {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 1; 
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+.text {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+input[type="text"],
+input[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+h2,
+span,
+.custom-checkbox {
+  margin-left: 20px;
+}
+.custom-checkbox {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+
+.custom-checkbox:checked {
+  background-color: rgba(17, 97, 237, 1);
+}
+
+.custom-checkbox:checked:after {
+  content: '\2714';
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: #fff;
+}
+
+.custom-checkbox:focus {
+  outline: none;
+}
+.signin {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.signin:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.signin:focus {
+  outline: none;
+}
+
+.managerBtn {
+	cursor: pointer;
+	text-align: center;
+	width: 50%;
+	background-color: #616161;
+	border-radius: 10px 10px 0px 0px;
+	display: inline-block;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+.guestBtn {
+	cursor: pointer;
+	width: 50%;
+	text-align: center;
+	background-color: #505050;
+	border-radius: 10px 10px 0px 0px;
+	display: inline-block;
+	padding-right: 20px;
+	right: 0px;
+	display: inline-block;
+}
+
+.loginManager {
+	display: block;
+	background-color: #616161;
+	border-radius: 0px 0px 10px 10px;
+	padding: 0px 30px 30px 30px;
+}
+
+.loginGuest {
+	display: none;
+	background-color: #616161;
+	border-radius: 0px 0px 10px 10px;
+	padding: 0px 30px 30px 30px;
+}
+
+.container2 {
+	display: flex;
+	justify-content: space-between;
+	text-decoration: none;
+	box-sizing: inherit;
+}
 header{
     background-color:cadetblue;
     position: relative;
@@ -96,7 +276,7 @@ header{
             <nav class=" navbar navbar-expand-lg navbar-light bg-light" style='background-color:cadetblue'>
                 <div>
                     <i class="fa-solid fa-bus"></i>
-                    <a class="navbar-brand" href="#">XE BUS TP Hồ Chí Minh</a>
+                    <a class="navbar-brand" href="dangnhap.htm?trangchu">XE BUS TP Hồ Chí Minh</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,7 +286,7 @@ header{
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="dangnhap.htm?trangchu">Trang chủ <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -149,43 +329,69 @@ header{
         <a class="dong-2" href=""> /Quản lí xe bus</a>
     </div>
 
+ <div class="login">
+		<div class="container2">
+			<div class="managerBtn">
+				<h2>manager</h2>
+			</div>
+			<div class="guestBtn">
+				<h2>guest</h2>
+			</div>
+		</div>
+		<div class="loginManager">
+			<form action="login" method="post" >
+				<input type="text" class="text" name="userename"> <span>username</span>
+				<br> <br> <input type="password" class="text"
+					name="password"> <span>password</span> <br> <input
+					type="checkbox" id="checkbox-1-1" class="custom-checkbox" /> <label
+					for="checkbox-1-1">Keep me Signed in</label>
 
-    <div class="container dong-3">
-        <div class=" col-8 " data-ride="carousel" data-mdb-interval="false">
-            <div class="row  ">
-                <h5>HỆ THỐNG QUẢN LÝ XE BUS</h5>
-            </div>
-            <div>
-                <img  class="anh-xebus" src="./assets/img/trangchu.jpg">
-            </div>
-        </div>
-    </div>
+				<button class="signin">Sign In</button>
 
-    <div class="ngan-cach">
-        <div>Yêu cầu phần mềm</div>
 
-    </div>
+				<hr>
 
-    <div class="container">
-        <span>
-            <div class="tieu-de" > Với mục đích nâng cao hiệu quả cho công việc quản lí Hệ thống xe Bus, hệ thống đảm bảo
-                các yêu cầu: </div>
-            <div> - Thực hiện tốt các chức năng điều hành.</div>
-            <div> - Hệ thống nhất định phải dễ sử dụng, truy cập dữ liệu nhanh chóng và chính xác, thao tác đơn giản.</div>
-            <div> - Giao diện thân thiện, khoa học.</div>
-            <div> - Tìm kiếm, thống kê nhanh chóng, chính xác theo yêu cầu.</div>
-            <div> - Có đầy đủ các tính năng của một chương trình quản lí</div>
-        </span>
+				<a href="#">Forgot Password?</a>
+			</form>
+		</div>
+		<div class="loginGuest">
+			<form action="#">
+				<input type="text" class="text" name="guestname"> <span>your
+					name</span> <br> <br> <br>
 
-        <span>
-            <div class="tieu-de"> Ngoài ra phần mềm cũng đạt chuẩn yêu cầu về an toàn : </div>
-            <div>- Có các cơ chế ngăn ngừa việc thực hiện sai quy trình, sai quy định nhập, nhập sai dữ liệu.</div>
-            <div>- Bảo đảm tính nhất quán , thống nhất, toàn vẹn dữ liệu hệ thống.</div>
-            <div style="padding-bottom: 30px;">- Có các cơ chế cấu hình cho phép linh động trong việc thay đổi, di dời
-                hạ tầng thiết bị như máy chủ, máy trạm, cấu hình mạng,...</div>
+				<button class="signin">Sign In</button>
+				<hr>
+			</form>
+		</div>
 
-        </span>
-    </div>
+	</div>
+	<script>
+   var guestBtn =document.querySelector('.guestBtn');
+   var managerBtn =document.querySelector('.managerBtn');
+
+   var loginManager=document.querySelector('.loginManager');
+   var loginGuest=document.querySelector('.loginGuest');
+   
+    guestBtn.addEventListener('click',function(){
+    	this.style.background="#616161";
+    	managerBtn.style.background="#505050";
+    	loginGuest.style.background="#616161";
+        loginGuest.style.display="block";
+        loginManager.style.display="none";
+    })
+
+
+      managerBtn.addEventListener('click',function(){
+    	  this.style.background="#616161";
+    	  guestBtn.style.background="#505050";
+    	  loginManager.style.background="#616161";
+        loginGuest.style.display="none";
+        loginManager.style.display="block";
+        
+        
+      });
+  </script>
+    
 
     <div class=" duoi ">
         <a class="dong-cuoi" href="">

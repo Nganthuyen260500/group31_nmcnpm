@@ -102,7 +102,7 @@ header{
     <header>
         <div class="container-fuild bg-success" >
 
-            <nav class=" navbar navbar-expand-lg navbar-light style='background-color:cadetblue'">
+            <nav class=" navbar navbar-expand-lg navbar-light " style='background-color:cadetblue'>
                 <div>
                     <i class="fa-solid fa-user icon-mng" ></i>
                     <a class="navbar-brand" href="#">QUẢN LÝ</a>
