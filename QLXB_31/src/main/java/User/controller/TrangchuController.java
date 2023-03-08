@@ -10,7 +10,7 @@ public class TrangchuController {
 	
 	@RequestMapping("index")
 	public String welcome() {
-		return "admin/admin";
+		return "nvkt/nvkt";
 	}
 
 }

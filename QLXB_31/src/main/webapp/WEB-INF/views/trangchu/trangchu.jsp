@@ -65,6 +65,7 @@ header{
 	text-align:center;
     color: aliceblue;
 }
+
 </style>
 <head>
     <title>Xe Buýt TP HCM</title>
@@ -131,6 +132,9 @@ header{
                         </li>
                          <li class="nav-item active">
                             <a class="nav-link" href="#">Đăng nhập<span class="sr-only">(current)</span></a>
+                        </li>
+                         <li class="nav-item active">
+                            <a class="nav-link" href="#">Trợ giúp<span class="sr-only">(current)</span></a>
                         </li>
                    
                     </ul>
