@@ -106,7 +106,7 @@ bac.kground-color: 5F9EA0;
             <nav class=" navbar navbar-expand-lg navbar-light" style='background-color:cadetblue'>
                 <div>
                     <i class="fa-solid fa-user-secret icon-ad"></i>
-                    <a class="navbar-brand" href="#">ADMIN</a>
+                    <a class="navbar-brand" href="suattadmin.htm?admin">ADMIN</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +116,7 @@ bac.kground-color: 5F9EA0;
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Thông tin của bạn <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="suattadmin.htm?admin">Thông tin của bạn <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -174,15 +174,17 @@ bac.kground-color: 5F9EA0;
         </div>
     </header>
     <div class="container form-dang-nhap">
-        <form action="admin.htm">
+        <form action="action_page.php">
             <div class="row">
                 <div class="col-4">
                     Họ và tên : <%-- ${ } --%>
+                    <input type="text" name="hoten-admin">
                     <br>
                     <br>
                 </div>
                 <div class="col-4">
                      <label for="ngaysinh">Ngày sinh :<%--  ${ } --%></label> 
+                     <input type="date" name="ngaysinh" id="ngaysinh" value="yyyy-mm-dd">
                      <br>
                      <br>
                 </div>
@@ -190,52 +192,37 @@ bac.kground-color: 5F9EA0;
             </div>
             <div class="row ma-nhan-vien">
                 <div class="col-4">
-                    chức vụ : <br>
+                    chức vụ : 
+              			 <input type="text" name="chucvu">
+              			 <br>
                     <br>
                 </div>
 
                 <div class="col-4">
                     Số điện thoại :
+                     <input type="text" name="sodt">
                     <br>
                     <br>
                 </div>
                 <div class="col-4">
-                    Giới Tính : <br>
+                    Giới Tính :
+                     <input type="text" name="phai"> <br>
                     <br>
                 </div>
 
             </div>
             <div>
-                Địa chỉ :
+                Địa chỉ : <input style="width: 80%;" type="text" name="dia-chi">
                 <br>
                 <br>
             </div>
-            <button name="fix">Chỉnh sửa</button>
+             <input type="submit" name="fix" value="Cập nhập" />
+
         </form>
 
 
     </div>
 
-     <div class="ngan-cach" style="margin-top:50px; margin-bottom:50px">
-        <div>Thông tin tài khoản</div>
-
-    </div>
-
-    <div class="container">
-        <form action="https://httpbin.org/anything" method="get">
-            <label for="name">Tên đăng nhập:</label><br>
-            <input id="name" name="name" type="text" value=""><br>
-
-            <label>Mật khẩu cũ:</label><br>
-            <input name="pass" type="password" value=""><br>
-            <label>Mật khẩu mới:</label><br>
-            <input name="pass" type="password" value=""><br>
-            <br>
-            
-
-            <input type="submit" name="capnhat" value="Cập Nhập" />
-        </form>
-    </div>
     
 
 </body>
