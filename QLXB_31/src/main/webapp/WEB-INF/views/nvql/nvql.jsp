@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ADMIN</title>
+<title>Quản lý</title>
 <link href='assets/css/trangchu.css' rel='stylesheet'>
 <link href='assets/css/all.css' rel='stylesheet'>
 

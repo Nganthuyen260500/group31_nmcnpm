@@ -10,7 +10,7 @@ public class TrangchuController {
 	
 	@RequestMapping("index")
 	public String welcome() {
-		return "nvkt/nvkt";
+		return "nvql/nvql";
 	}
 
 }
