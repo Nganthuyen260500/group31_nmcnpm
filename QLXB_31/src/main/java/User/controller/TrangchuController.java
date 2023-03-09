@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 
 public class TrangchuController {
-	
+//	
 //	@RequestMapping("index")
 //	public String welcome() {
 //		return "trangchu/trangchu";
@@ -34,6 +34,59 @@ public class TrangchuController {
 	public String trangchu() {
 		return"admin/admin";
 	}
+	@RequestMapping(params = "themtaikhoan")
+	public String themtaikhoan() {
+		return"admin/themtaikhoan";
+	}
+	@RequestMapping(params = "chinhsuataikhoan")
+	public String chinhsuataikhoan() {
+		return"admin/chinhsuataikhoan";
+	}
+	@RequestMapping(params = "xoataikhoan")
+	public String xoataikhoan() {
+		return"admin/xoataikhoan";
+	}
+	@RequestMapping(params = "themnhanvien")
+	public String themnhanvien() {
+		return"admin/themnhanvien";
+	}
+	@RequestMapping(params = "suattnhanvien")
+	public String suattnhanvien() {
+		return"admin/suattnhanvien";
+	}
+	@RequestMapping(params = "xoanhanvien")
+	public String xoanhanvien() {
+		return"admin/xoanhanvien";
+	}
+	@RequestMapping(params = "xemdtthang")
+	public String xemdtthang() {
+		return"admin/xemdtthang";
+	}
+	@RequestMapping(params = "xemdttuyen")
+	public String xemdttuyen() {
+		return"admin/xemdttuyen";
+	}
+	@RequestMapping(params = "xemdttramve")
+	public String xemdttramve() {
+		return"admin/xemdttramve";
+	}
+	@RequestMapping(params = "xemtttuyen")
+	public String xemtttuyen() {
+		return"admin/xemtttuyen";
+	}
+	@RequestMapping(params = "xemttxe")
+	public String xemttxe() {
+		return"admin/xemttxe";
+	}
+	@RequestMapping(params = "xemtttramve")
+	public String xemtttramve() {
+		return"admin/xemtttramve";
+	}
+	@RequestMapping(params = "luong")
+	public String luong() {
+		return"admin/luong";
+	}
+
 
 	
 }

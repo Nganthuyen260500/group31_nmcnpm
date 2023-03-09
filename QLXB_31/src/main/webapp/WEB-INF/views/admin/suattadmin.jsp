@@ -124,9 +124,9 @@ bac.kground-color: 5F9EA0;
                                 Tài khoản
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Thêm tài khoản</a>
-                                <a class="dropdown-item" href="#">Chỉnh sửa tài khoản user</a>
-                                <a class="dropdown-item" href="#">Xóa tài khoản user</a>
+                                <a class="dropdown-item" href="suattadmin.htm?themtaikhoan">Thêm tài khoản</a>
+                                <a class="dropdown-item" href="suattadmin.htm?chinhsuataikhoan">Chỉnh sửa tài khoản user</a>
+                                <a class="dropdown-item" href="suattadmin.htm?xoataikhoan">Xóa tài khoản user</a>
                             </div>
                         <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -135,9 +135,9 @@ bac.kground-color: 5F9EA0;
                                 </a>
                                 <div class="dropdown-menu">
                          
-                                    <a class="dropdown-item" href="#">Thêm nhân viên</a>
-                                    <a class="dropdown-item" href="#">Chỉnh sửa thông tin nhân viên</a>
-                                    <a class="dropdown-item" href="#">Xóa nhân viên</a>
+                                    <a class="dropdown-item" href="suattadmin.htm?themtaikhoan">Thêm nhân viên</a>
+                                    <a class="dropdown-item" href="suattadmin.htm?suattnhanvien">Chỉnh sửa thông tin nhân viên</a>
+                                    <a class="dropdown-item" href="suattadmin.htm?xoanhanvien">Xóa nhân viên</a>
                                 </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -146,9 +146,9 @@ bac.kground-color: 5F9EA0;
                                 Doanh thu
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Xem doanh thu tháng</a>
-                                <a class="dropdown-item" href="#">Xem doanh thu tuyến xe</a>
-                                <a class="dropdown-item" href="#">Xem doanh thu trạm vé</a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemdtthang">Xem doanh thu tháng</a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemdttuyen">Xem doanh thu tuyến xe</a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemdttramve">Xem doanh thu trạm vé</a>
                                 
                             </div>
                         <li class="nav-item dropdown">
@@ -158,14 +158,14 @@ bac.kground-color: 5F9EA0;
                             </a>
                             <div class="dropdown-menu">
                                 <!--chèn link đến trang liên hệ và chính sách-->
-                                <a class="dropdown-item" href="#">Xem thông tin các tuyến đường</a>
-                                <a class="dropdown-item" href="#">xem thông tin xe </a>
-                                <a class="dropdown-item" href="#">xem thông các trạm vé </a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemtttuyen">Xem thông tin các tuyến đường</a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemttxe">xem thông tin xe </a>
+                                <a class="dropdown-item" href="suattadmin.htm?xemtttramve">xem thông các trạm vé </a>
                                 
                             </div>
                         </li>
                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Lương <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="suattadmin.htm?luong">Lương <span class="sr-only">(current)</span></a>
                         </li>
                         
                     </ul>

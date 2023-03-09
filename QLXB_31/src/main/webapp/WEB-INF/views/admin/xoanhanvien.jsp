@@ -106,7 +106,7 @@ bac.kground-color: 5F9EA0;
             <nav class=" navbar navbar-expand-lg navbar-light" style='background-color:cadetblue'>
                 <div>
                     <i class="fa-solid fa-user-secret icon-ad"></i>
-                    <a class="navbar-brand" href="#">ADMIN</a>
+                    <a class="navbar-brand" href="xoanhanvien.htm?admin">ADMIN</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +116,7 @@ bac.kground-color: 5F9EA0;
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Thông tin của bạn <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="xoanhanvien.htm?admin">Thông tin của bạn <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -124,9 +124,9 @@ bac.kground-color: 5F9EA0;
                                 Tài khoản
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="admin.htm?themtaikhoan">Thêm tài khoản</a>
-                                <a class="dropdown-item" href="admin.htm?chinhsuataikhoan">Chỉnh sửa tài khoản user</a>
-                                <a class="dropdown-item" href="admin.htm?xoataikhoan">Xóa tài khoản user</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?themtaikhoan">Thêm tài khoản</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?chinhsuataikhoan">Chỉnh sửa tài khoản user</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xoataikhoan">Xóa tài khoản user</a>
                             </div>
                         <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
@@ -135,9 +135,9 @@ bac.kground-color: 5F9EA0;
                                 </a>
                                 <div class="dropdown-menu">
                          
-                                    <a class="dropdown-item" href="admin.htm?themnhanvien">Thêm nhân viên</a>
-                                    <a class="dropdown-item" href="admin.htm?suattnhanvien">Chỉnh sửa thông tin nhân viên</a>
-                                    <a class="dropdown-item" href="admin.htm?xoanhanvien">Xóa nhân viên</a>
+                                    <a class="dropdown-item" href="xoanhanvien.htm?themnhanvien">Thêm nhân viên</a>
+                                    <a class="dropdown-item" href="xoanhanvien.htm?suattnhanvien">Chỉnh sửa thông tin nhân viên</a>
+                                    <a class="dropdown-item" href="xoanhanvien.htm?xoanhanvien">Xóa nhân viên</a>
                                 </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -146,9 +146,9 @@ bac.kground-color: 5F9EA0;
                                 Doanh thu
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="admin.htm?xemdtthang">Xem doanh thu tháng</a>
-                                <a class="dropdown-item" href="admin.htm?xemdttuyen">Xem doanh thu tuyến xe</a>
-                                <a class="dropdown-item" href="admin.htm?xemdttramve">Xem doanh thu trạm vé</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemdtthang">Xem doanh thu tháng</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemdttuyen">Xem doanh thu tuyến xe</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemdttramve">Xem doanh thu trạm vé</a>
                                 
                             </div>
                         <li class="nav-item dropdown">
@@ -158,14 +158,14 @@ bac.kground-color: 5F9EA0;
                             </a>
                             <div class="dropdown-menu">
                                 <!--chèn link đến trang liên hệ và chính sách-->
-                                <a class="dropdown-item" href="admin.htm?xemtttuyen">Xem thông tin các tuyến đường</a>
-                                <a class="dropdown-item" href="admin.htm?xemttxe">xem thông tin xe </a>
-                                <a class="dropdown-item" href="admin.htm?xemtttramve">xem thông các trạm vé </a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemtttuyen">Xem thông tin các tuyến đường</a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemttxe">xem thông tin xe </a>
+                                <a class="dropdown-item" href="xoanhanvien.htm?xemtttramve">xem thông các trạm vé </a>
                                 
                             </div>
                         </li>
                        <li class="nav-item active">
-                            <a class="nav-link" href="admin.htm?luong">Lương <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="xoanhanvien.htm?luong">Lương <span class="sr-only">(current)</span></a>
                         </li>
                         
                     </ul>
@@ -178,6 +178,7 @@ bac.kground-color: 5F9EA0;
             <div class="row">
                 <div class="col-4">
                     Họ và tên : <%-- ${ } --%>
+                    <input type="text" name="hoten_nhanvien">
                     <br>
                     <br>
                 </div>
@@ -210,30 +211,13 @@ bac.kground-color: 5F9EA0;
                 <br>
                 <br>
             </div>
-            <button name="fix">Chỉnh sửa</button>
+           <input type="submit" name="xoanv" value="xóa"  />
         </form>
 
 
     </div>
 
-     <div class="ngan-cach" style="margin-top:50px; margin-bottom:50px">
-        <div>Đổi mật khẩu</div>
-
-    </div>
-
-    <div class="container">
-        <form action="https://httpbin.org/anything" method="get">
-            <label for="name">Tên đăng nhập:</label><br>
-            <input id="name" name="name" type="text" value=""><br>
-
-            <label>Mật khẩu cũ:</label><br>
-            <input name="pass" type="password" value=""><br>
-            <label>Mật khẩu mới:</label><br>
-            <input name="pass" type="password" value=""><br>
-            <br>
-            
-
-            <input type="submit" name="capnhat" value="Cập Nhập" />
+  
         </form>
     </div>
     
