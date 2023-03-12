@@ -29,22 +29,5 @@
    	
    	<!-- Cấu hình package chứa các controller -->
 	<context:component-scan base-package="User.controller"/>
-	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
-	p:driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-	p:url="jdbc:sqlserver://localhost:1433;Database=QLXB_31"
-	p:username="sa"
-	p:password="huy01667717825">
-	</bean>
-	<bean id="sessionFactory" 
-	class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-		<property name="dataSource" ref="dataSource"></property>
-		<property name="hibernateProperties">
-			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.SQLSeverDialect</prop>
-				<prop key="hibernate.show_sql">true</prop>
-			</props>
-		</property>
-		
 	
-	</bean> -->
 </beans>

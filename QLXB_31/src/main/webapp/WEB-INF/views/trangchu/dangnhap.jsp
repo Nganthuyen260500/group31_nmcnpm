@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Trang chủ</title>
+<base href="${pageContext.servletContext.contextPath}/">
 <link href='assets/css/trangchu.css' rel='stylesheet'>
  <!-- <link href='assets/css/login.css' rel='stylesheet'>  -->
 
@@ -19,7 +20,7 @@
 
 .login {
   position: relative;
-  height: 560px;
+  height: 700px;
   width: 530px;
   margin: auto;
   padding: 60px 60px;
@@ -339,14 +340,21 @@ header{
 			</div>
 		</div>
 		<div class="loginManager">
-			<form action="login" method="post" >
-				<input type="text" class="text" name="userename"> <span>username</span>
+
+
+			<form action="login.htm" method="post">
+				<input type="text" class="text" name="username"> <span>username</span>
 				<br> <br> <input type="password" class="text"
-					name="password"> <span>password</span> <br> <input
+					name="password"> <span>password</span> <br> 
+					 <div style='color:#db4d4d' >
+            ${error }
+			</div>
+			<br>
+					<input
 					type="checkbox" id="checkbox-1-1" class="custom-checkbox" /> <label
 					for="checkbox-1-1">Keep me Signed in</label>
 
-				<button class="signin">Sign In</button>
+				<button class="signin"  name="signin">Sign In</button>
 
 
 				<hr>
@@ -359,9 +367,10 @@ header{
 				<input type="text" class="text" name="guestname"> <span>your
 					name</span> <br> <br> <br>
 
-				<button class="signin">Sign In</button>
+				<button class="signin" name="signin">Sign In</button>
 				<hr>
 			</form>
+			<div>${message }</div>
 		</div>
 
 	</div>
